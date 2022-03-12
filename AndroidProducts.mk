@@ -14,7 +14,10 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/a3y17lte/
+PRODUCT_MAKEFILES := \
+     $(LOCAL_DIR)/omni_a3y17lte.mk
 
-include $(call all-makefiles-under,$(LOCAL_PATH))
-PRODUCT_MAKEFILES := $(LOCAL_PATH)/omni_a3y17lte.mk
+COMMON_LUNCH_CHOICES := \
+    omni_a3y17lte-user \
+    omni_a3y17lte-userdebug \
+    omni_a3y17lte-eng
